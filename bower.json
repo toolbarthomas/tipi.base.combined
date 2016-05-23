@@ -1,0 +1,16 @@
+{
+  "name": "tipi.base.combined",
+  "homepage": "https://github.com/toolbarthomas/tipi.base.columns",
+  "authors": [
+    "Thomas van der Velde <contact@toolbarthomas.net>"
+  ],
+  "description": "Horizontally align multiple elements",
+  "keywords": [
+    "toolbarthomas",
+    "modular",
+    "tipi",
+    "combined"
+  ],
+  "license": "MIT",
+  "main": "_tipi.base.combined.scss"
+}
