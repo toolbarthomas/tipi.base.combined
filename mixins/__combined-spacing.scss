@@ -1,4 +1,4 @@
-@mixin combined-spacing($selector:false, $horizontal-gutter:false, $vertical-gutter: false) {
+@mixin combined-gutter($selector:false, $horizontal-gutter:false, $vertical-gutter: false) {
 	.combined {
 		#{$selector} {
 			@if $horizontal-gutter != false {
