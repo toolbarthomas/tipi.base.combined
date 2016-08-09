@@ -1,0 +1,28 @@
+@mixin combined-spacing($selector:false, $horizontal-gutter:false, $vertical-gutter: false) {
+	.combined {
+		#{$selector} {
+			@if $horizontal-gutter != false {
+				> .combined-aside {
+					padding-right: $horizontal-gutter;
+				}
+
+				> .combined-body ~ .combined-aside {
+					padding-right: 0;
+					padding-left: $horizontal-gutter;
+				}
+			}
+
+			@if $vertical-gutter != false {
+				> .combined-body,
+				> .combined-aside {
+					&:before {
+						display: none;
+						content: " ";
+						height: $vertical-gutter;
+						overflow: hidden;
+					}
+				}
+			}
+		}
+	}
+}

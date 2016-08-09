@@ -1,0 +1,29 @@
+@mixin combined-reset($viewport, $min-width:false, $max-width:false) {
+	@include breakpoint($min-width, $max-width) {
+		.combined {
+			&.combined--reset-#{$viewport} {
+				&,
+				& > .combined-body,
+				& > .combined-aside {
+					display: block;
+					width: auto;
+					vertical-align: baseline;
+				}
+
+				> .combined-aside,
+				> .combined-body {
+					white-space: normal;
+					padding: 0;
+
+					&:before {
+						display: block;
+					}
+
+					&:first-child:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+}
