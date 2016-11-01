@@ -42,6 +42,7 @@
 	}
 
 	@include combined-gutter('&', $combined-horizontal-gutter, $combined-vertical-gutter);
+	@include combined-gutter('&.combined--no-gutter', 0, 0);
 	@include combined-reset(smartphone, 0, $smartphone-max-width);
 	@include combined-reset(phablet, $phablet-min-width, $phablet-max-width);
 	@include combined-reset(tablet, $tablet-min-width, $tablet-max-width);
