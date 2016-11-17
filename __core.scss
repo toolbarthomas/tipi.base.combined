@@ -41,13 +41,57 @@
 		}
 	}
 
-	@include combined-gutter($combined-horizontal-gutter, $combined-vertical-gutter);
-	@include combined-gutter('.combined--no-gutter', 0, 0);
-	@include combined-reset(smartphone, 0, $smartphone-max-width);
-	@include combined-reset(phablet, $phablet-min-width, $phablet-max-width);
-	@include combined-reset(tablet, $tablet-min-width, $tablet-max-width);
-	@include combined-reset(tablet-landscape, $tablet-landscape-min-width, $tablet-landscape-max-width);
-	@include combined-reset(desktop, $desktop-min-width, $desktop-max-width);
-	@include combined-reset(widescreen, $widescreen-min-width, $widescreen-max-width);
-	@include combined-reset(highroller, $highroller-min-width, $highroller-max-width);
+	@include combined-gutter(
+		$selector: null,
+		$horizontal-gutter: $combined-horizontal-gutter,
+		$vertical-gutter: $combined-vertical-gutter
+	);
+
+	@include combined-gutter(
+		$selector: '.combined--no-gutter',
+		$horizontal-gutter: 0,
+		$vertical-gutter: 0
+	);
+
+	@include combined-reset(
+		$viewport: smartphone,
+		$min-width: 0,
+		$max-width: $smartphone-max-width
+	);
+
+	@include combined-reset(
+		$viewport: phablet,
+		$min-width: $phablet-min-width,
+		$max-width: $phablet-max-width
+	);
+
+	@include combined-reset(
+		$viewport: tablet,
+		$min-width: $tablet-min-width,
+		$max-width: $tablet-max-width
+	);
+
+	@include combined-reset(
+		$viewport: tablet-landscape,
+		$min-width: $tablet-landscape-min-width,
+		$max-width: $tablet-landscape-max-width
+	);
+
+	@include combined-reset(
+		$viewport: desktop,
+		$min-width: $desktop-min-width,
+		$max-width: $desktop-max-width
+	);
+
+	@include combined-reset(
+		$viewport: widescreen,
+		$min-width: $widescreen-min-width,
+		$max-width: $widescreen-max-width
+	);
+
+	@include combined-reset(
+		$viewport: highroller,
+		$min-width: $highroller-min-width,
+		$max-width: $highroller-max-width
+	);
 }

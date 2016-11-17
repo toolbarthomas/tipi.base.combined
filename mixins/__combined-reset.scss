@@ -1,4 +1,8 @@
-@mixin combined-reset($viewport, $min-width:false, $max-width:false) {
+@mixin combined-reset(
+	$viewport: null,
+	$min-width:false,
+	$max-width:false
+) {
 	@include breakpoint($min-width, $max-width) {
 		.combined {
 			&.combined--reset-#{$viewport} {
