@@ -1,7 +1,7 @@
 @import "__config";
 @import "__core";
 
-@import "mixins/__combined-spacing";
+@import "mixins/__combined-gutter";
 @import "mixins/__combined-reset";
 
 @include core_combined;
