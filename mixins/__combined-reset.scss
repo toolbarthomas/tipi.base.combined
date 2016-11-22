@@ -1,7 +1,7 @@
 @mixin combined-reset(
 	$viewport: null,
-	$min-width:false,
-	$max-width:false
+	$min-width: false,
+	$max-width: false
 ) {
 	@include breakpoint($min-width, $max-width) {
 		.combined {

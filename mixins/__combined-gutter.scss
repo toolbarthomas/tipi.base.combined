@@ -1,6 +1,6 @@
 @mixin combined-gutter(
-	$selector:null,
-	$horizontal-gutter:false,
+	$selector: null,
+	$horizontal-gutter: false,
 	$vertical-gutter: false
 ) {
 	.combined {
