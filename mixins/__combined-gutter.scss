@@ -20,10 +20,7 @@
 				> .combined-body,
 				> .combined-aside {
 					&:before {
-						display: none;
-						content: " ";
 						height: $vertical-gutter;
-						overflow: hidden;
 					}
 				}
 			}

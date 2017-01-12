@@ -21,6 +21,8 @@
 
 					&:before {
 						display: block;
+						content: " ";
+						overflow: hidden;
 					}
 
 					&:first-child:before {
