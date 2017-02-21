@@ -14,10 +14,17 @@
 					vertical-align: baseline;
 				}
 
+				> .combined-aside {
+					padding-right: 0;
+				}
+
+				> .combined-body ~ .combined-aside {
+					padding-left: 0;
+				}
+
 				> .combined-aside,
 				> .combined-body {
 					white-space: normal;
-					padding: 0;
 
 					&:before {
 						display: block;

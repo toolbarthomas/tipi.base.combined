@@ -9,36 +9,21 @@
 	.combined-aside {
 		display: table-cell;
 		line-height: inherit;
-		margin: 0;
-		padding: 0;
 		vertical-align: top;
+		height: 100%;
+
+		.combined--middle > & {
+			vertical-align: middle;
+		}
+
+		.combined--bottom > & {
+			vertical-align: bottom;
+		}
 	}
 
 	.combined-aside {
 		width: 1%;
 		white-space: nowrap;
-	}
-
-	.combined--middle,
-	.combined--bottom {
-		> .combined-body,
-		> .combined-aside {
-			height: 100%;
-		}
-	}
-
-	.combined--middle {
-		> .combined-body,
-		> .combined-aside {
-			vertical-align: middle;
-		}
-	}
-
-	.combined--bottom {
-		> .combined-body,
-		> .combined-aside {
-			vertical-align: bottom;
-		}
 	}
 
 	@include combined-gutter(
@@ -55,7 +40,7 @@
 
 	@include combined-reset(
 		$viewport: smartphone,
-		$min-width: 0,
+		$min-width: false,
 		$max-width: $smartphone-max-width
 	);
 
