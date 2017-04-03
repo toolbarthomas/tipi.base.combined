@@ -16,11 +16,11 @@
 				}
 
 				> .combined-aside {
-					padding-right: 0;
+					padding-right: 0 !important;
 				}
 
 				> .combined-body ~ .combined-aside {
-					padding-left: 0;
+					padding-left: 0 !important;
 				}
 
 				> .combined-aside,
