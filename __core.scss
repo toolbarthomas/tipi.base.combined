@@ -41,43 +41,43 @@
 
 	@include combined-reset(
 		$viewport: smartphone,
-		$min-width: viewport(smartphone, min-width),
-		$max-width: viewport(smartphone, max-width)
+		$min-width: false,
+		$max-width: $smartphone-max-width
 	);
 
 	@include combined-reset(
 		$viewport: phablet,
-		$min-width: viewport(phablet, min-width),
-		$max-width: viewport(phablet, max-width)
+		$min-width: $phablet-min-width,
+		$max-width: $phablet-max-width
 	);
 
 	@include combined-reset(
 		$viewport: tablet,
-		$min-width: viewport(tablet, min-width),
-		$max-width: viewport(tablet, max-width)
+		$min-width: $tablet-min-width,
+		$max-width: $tablet-max-width
 	);
 
 	@include combined-reset(
 		$viewport: tablet-landscape,
-		$min-width: viewport(tablet-landscape, min-width),
-		$max-width: viewport(tablet-landscape, max-width)
+		$min-width: $tablet-landscape-min-width,
+		$max-width: $tablet-landscape-max-width
 	);
 
 	@include combined-reset(
 		$viewport: desktop,
-		$min-width: viewport(desktop, min-width),
-		$max-width: viewport(desktop, max-width)
+		$min-width: $desktop-min-width,
+		$max-width: $desktop-max-width
 	);
 
 	@include combined-reset(
 		$viewport: widescreen,
-		$min-width: viewport(widescreen, min-width),
-		$max-width: viewport(widescreen, max-width)
+		$min-width: $widescreen-min-width,
+		$max-width: $widescreen-max-width
 	);
 
 	@include combined-reset(
 		$viewport: highroller,
-		$min-width: viewport(highroller, min-width),
-		$max-width: viewport(highroller, max-width)
+		$min-width: $highroller-min-width,
+		$max-width: $highroller-max-width
 	);
 }
