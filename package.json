@@ -1,0 +1,25 @@
+{
+    "name": "tipi.base.combined",
+    "version": "1.1.11",
+    "description": "https://github.com/toolbarthomas/tipi.base.combined",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/toolbarthomas/tipi.base.combined.git"
+    },
+    "keywords": [
+        "totem",
+        "tipi"
+    ],
+    "author": "Thomas van der Velde <contact@toolbarthomas.net>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/toolbarthomas/tipi.base.combined/issues"
+    },
+    "homepage": "https://github.com/toolbarthomas/tipi.base.combined#readme",
+    "dependencies": {
+        "bourbon": "^4.3.4"
+    }
+}
